@@ -1,1 +1,13 @@
+#include <stdio.h>
 
+int main()
+{
+    char nome[40];
+    printf ("player name\n");
+    scanf ("%s", nome);
+    printf("Bem vindo, %s", nome);
+ int dificuldade = 0;
+ printf("\nQual sera a dificuldade:\n 1 = facil;\n 2 = medio;\n 3 = dificil.\n");
+ scanf("%d", &dificuldade);
+    return 0;
+}
