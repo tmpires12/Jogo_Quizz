@@ -6,8 +6,63 @@ int main()
     printf ("player name\n");
     scanf ("%s", nome);
     printf("Bem vindo, %s", nome);
- int dificuldade = 0;
- printf("\nQual sera a dificuldade:\n 1 = facil;\n 2 = medio;\n 3 = dificil.\n");
+
+
+ int desporto = 0;
+ printf ("\nQual o desporto:\n1 = Andebol;\n2 = Futebol. \n");
+ scanf ("%d" , &desporto);
+ if (desporto = 1){
+ printf ("Bem Vindo ao Jogo de Andebol!\n");
+
+ int score = 0;
+
+ int resposta = 0; 
+ 
+int dificuldade = 0;
+
+ printf("\nQual sera a dificuldade:\n 1 = facil;\n 2 = medio;\n 3 = dificil;\n 4 = Impossivel\n");
  scanf("%d", &dificuldade);
+    if (dificuldade = 1 ) {
+        printf ("\n Onde Jogam os irmãos Costa?");
+        printf("\n 1 = Alto do Moinho \n 2 = Sporting \n 3 = Futbol CLube do Porto \n 4 = ABC de Braga \n");
+        scanf ("%d" , &resposta);
+        if ( resposta = 2) {
+            score = score + 10;
+        } else {
+            score = score - 5;
+    }
+    
+ 
+ printf("\nQual é o cluebe onde o Nikola Mitrevski joga?");
+ printf("\n 1 = Vitoria de Setubal \n 2 = Sport Lisboa e Benfica \n 3 = Futbol Clube do Porto \n 4 = Sporting Clube de Portugal \n");
+ scanf("%d" , &resposta);
+ if (resposta = 3) {
+     score = score + 10;
+ } else {
+     score = score - 5;
+ }
+ 
+      
+      printf ("Qual o nome do jogador numero  6 do Sporting?");
+        printf("\n 1 = Kiko Costa \n 2 = Gustavo Capdeville \n 3 = Nikola Mitrevski \n 4 = Manuel Gaspar \n");
+        scanf ("%d" , &resposta);
+        if ( resposta = 1) {
+            score = score + 10;
+        } else {
+            score = score - 5;
+    }
+    }
+     
+       printf ("Qual foi o clube campeão nacional da Epoca 23/24?");
+        printf("\n 1 = Estrela da Amadora \n 2 = Sport Lisboa e Benfica \n 3 = Alto do Moinho \n 4 = Sporting CLube de Portugal \n");
+        scanf ("%d" , &resposta);
+        if ( resposta = 4) {
+            score = score + 10;
+        } else {
+            score = score - 5;
+    }
+    
+ }
+ 
     return 0;
 }
