@@ -11,7 +11,7 @@ int main()
  int desporto = 0;
  printf ("\nQual o desporto:\n1 = Andebol;\n2 = Futebol. \n");
  scanf ("%d" , &desporto);
- if (desporto = 1){
+ if (desporto == 1){
  printf ("Bem Vindo ao Jogo de Andebol!\n");
 
  int score = 0;
@@ -22,21 +22,21 @@ int dificuldade = 0;
 
  printf("\nQual sera a dificuldade:\n 1 = facil;\n 2 = medio;\n 3 = dificil;\n 4 = Impossivel\n");
  scanf("%d", &dificuldade);
-    if (dificuldade = 1 ) {
-        printf ("\n Onde Jogam os irmãos Costa?");
+    if (dificuldade == 1 ) {
+        printf ("\n Onde Jogam os irmaos Costa?");
         printf("\n 1 = Alto do Moinho \n 2 = Sporting \n 3 = Futbol CLube do Porto \n 4 = ABC de Braga \n");
         scanf ("%d" , &resposta);
         if ( resposta = 2) {
             score = score + 10;
         } else {
             score = score - 5;
-    }
+        }
     
  
- printf("\nQual é o cluebe onde o Nikola Mitrevski joga?");
+ printf("\nQual é o Clube onde o Nikola Mitrevski joga?");
  printf("\n 1 = Vitoria de Setubal \n 2 = Sport Lisboa e Benfica \n 3 = Futbol Clube do Porto \n 4 = Sporting Clube de Portugal \n");
  scanf("%d" , &resposta);
- if (resposta = 3) {
+ if (resposta == 3) {
      score = score + 10;
  } else {
      score = score - 5;
@@ -46,23 +46,61 @@ int dificuldade = 0;
       printf ("Qual o nome do jogador numero  6 do Sporting?");
         printf("\n 1 = Kiko Costa \n 2 = Gustavo Capdeville \n 3 = Nikola Mitrevski \n 4 = Manuel Gaspar \n");
         scanf ("%d" , &resposta);
-        if ( resposta = 1) {
+        if ( resposta == 1) {
             score = score + 10;
         } else {
             score = score - 5;
-    }
     }
      
        printf ("Qual foi o clube campeão nacional da Epoca 23/24?");
         printf("\n 1 = Estrela da Amadora \n 2 = Sport Lisboa e Benfica \n 3 = Alto do Moinho \n 4 = Sporting CLube de Portugal \n");
         scanf ("%d" , &resposta);
-        if ( resposta = 4) {
+        if ( resposta == 4) {
             score = score + 10;
         } else {
             score = score - 5;
     }
-    
+    dificuldade = 2;
+    printf ("\nFim da dificuldade 1");
+    printf ("\nscore=%d \n", score);
+ }    
+if (dificuldade == 2);
+ printf("Onde foi criado o Andebol?");
+ printf("\n 1 = Espanha \n 2 = Portugal \n 3 = Alemanha \n 4 = Inglaterra \n");
+ scanf ("%d" , &resposta);
+ if (resposta == 3) {
+     score = score + 15;
+ }else{
+     score = score - 10;
  }
- 
+printf("O que significa o 2' no Andebol?");
+ printf("\n 1 = O jogador sai de campo durante esse tempo (castigo) \n 2 = E uma pausa tecnica \n 3 = Tempo interrompido para assistencia de um jogador \n 4 = nao acontece nada \n");
+ scanf ("%d" , &resposta);
+ if (resposta == 1) {
+     score = score + 15;
+ }else{
+     score = score - 10;
+ }
+ printf("O que acontece quando um jogador leva cartao azul?");
+ printf("\n 1 = relatorio \n 2 = exclusao \n 3 = fairplay \n 4 = aviso verbal \n");
+ scanf ("%d" , &resposta);
+ if (resposta == 1) {
+     score = score + 15;
+ }else{
+     score = score - 10;
+ }
+ printf("Ano de criação do Andebol");
+ printf("\n 1 = 1900 \n 2 = 1990 \n 3 = 1917 \n 4 = 2000 \n");
+ scanf ("%d" , &resposta);
+ if (resposta == 3) {
+     score = score + 15;
+ }else{
+     score = score - 10;
+     
+ }
+ dificuldade = 2;
+printf("\n Fim da Dificuldade 2");
+printf("\nscore=%d \n" , score);
+ }
     return 0;
 }
