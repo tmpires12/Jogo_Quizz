@@ -11,7 +11,7 @@ int main()
  int desporto = 0;
  printf ("\nQual o desporto:\n1 = Andebol;\n2 = Futebol. \n");
  scanf ("%d" , &desporto);
- if (desporto == 1){
+ if (desporto == 1)
  printf ("Bem Vindo ao Jogo de Andebol!\n");
 
  int score = 0;
@@ -22,7 +22,8 @@ int dificuldade = 0;
 
  printf("\nQual sera a dificuldade:\n 1 = facil;\n 2 = medio;\n 3 = dificil;\n 4 = Impossivel\n");
  scanf("%d", &dificuldade);
-    if (dificuldade == 1 ) {
+    printf("Inico da dificuldade 1");
+     if (dificuldade == 1 ) {
         printf ("\n Onde Jogam os irmaos Costa?");
         printf("\n 1 = Alto do Moinho \n 2 = Sporting \n 3 = Futbol CLube do Porto \n 4 = ABC de Braga \n");
         scanf ("%d" , &resposta);
@@ -64,6 +65,7 @@ int dificuldade = 0;
     printf ("\nFim da dificuldade 1");
     printf ("\nscore=%d \n", score);
  }    
+printf("Incio da dificuldade 2\n");
 if (dificuldade == 2);
  printf("Onde foi criado o Andebol?");
  printf("\n 1 = Espanha \n 2 = Portugal \n 3 = Alemanha \n 4 = Inglaterra \n");
@@ -98,9 +100,72 @@ printf("O que significa o 2' no Andebol?");
      score = score - 10;
      
  }
- dificuldade = 2;
+ dificuldade = 3;
 printf("\n Fim da Dificuldade 2");
 printf("\nscore=%d \n" , score);
+
+
+
+ printf("Inicio da dificuldade 3");
+ if (dificuldade == 3){
+ printf("\nQuem foram os campeoes da champions masculina da epoca 23/24?");
+ printf("\n 1 = Sport Lisboa e Benfica \n 2 = Magdeburg \n 3 = Paris Saint German \n 4 = Barcelona\n");
+ scanf ("%d" , &resposta);
+ if (resposta == 4) {
+     score = score + 20;
+ }else{
+     score = score - 15;
  }
+printf("Quem foram os campeoes da champions Feminina da epoca 23/24?");
+ printf("\n 1 = Vipers Kristiansand \n 2 = Sport Lisboa e Benfica \n 3 = Alto do Moinho \n 4 = Barcelona \n");
+ scanf ("%d" , &resposta);
+ if (resposta == 1) {
+     score = score + 20;
+ }else{
+     score = score - 15;
+ }
+ printf("O que e o Time-Out?");
+ printf("\n 1 = Intrevalo \n 2 = Exclusao de Um Jogador \n 3 = Pausa Tecnica, colocada pelo treinador a meio do jogo \n 4 = Treinador é expluso \n");
+ scanf ("%d" , &resposta);
+ if (resposta == 3) {
+     score = score + 20;
+ }else{
+     score = score - 15;
+ }
+ printf("A nossa seleçao ja ganhou algum titulo Europeu?");
+ printf("\n 1 = nao \n 2 = sim \n");
+ scanf ("%d" , &resposta);
+ if (resposta == 1) {
+     score = score + 20;
+ }else{
+     score = score - 15;
+     
+ }
+ dificuldade = 4;
+printf("\n Fim da Dificuldade 3");
+printf("\nscore=%d \n" , score);
+}
+
+ printf("Inicio da dificuldade 4 ");
+ if (dificuldade == 4){
+ printf("\nQuem foi o criador do Andebol?");
+ printf("\n 1 = Joao Neves \n 2 = Benedikt \n 3 = Karl Schelenz \n 4 = Cristiano Ronaldo\n");
+ scanf ("%d" , &resposta);
+ if (resposta == 3) {
+     score = score + 100;
+ }else{
+     score = score - 99;
+ }
+ printf("\nQuem foi o melhor Jogador do mundo em 2016?");
+ printf("\n 1 = Francisco Costa \n 2 = Nikola Karabatić \n 3 = Karl Schelenz \n 4 = Gustavo Capdeville\n");
+ scanf ("%d" , &resposta);
+ if (resposta == 2) {
+     score = score + 100;
+ }else{
+     score = score - 99;
+ }
+printf("\n Fim da Dificuldade 4");
+printf("\n Pabens Acabaste o jogo do Andebol \nscore=%d \n" , score);
+}
     return 0;
 }
