@@ -22,12 +22,12 @@ int dificuldade = 0;
 
  printf("\nQual sera a dificuldade:\n 1 = facil;\n 2 = medio;\n 3 = dificil;\n 4 = Impossivel\n");
  scanf("%d", &dificuldade);
-    printf("Inico da dificuldade 1");
      if (dificuldade == 1 ) {
+        printf("Inico da dificuldade 1");
         printf ("\n Onde Jogam os irmaos Costa?");
         printf("\n 1 = Alto do Moinho \n 2 = Sporting \n 3 = Futbol CLube do Porto \n 4 = ABC de Braga \n");
         scanf ("%d" , &resposta);
-        if ( resposta = 2) {
+        if ( resposta == 2) {
             score = score + 10;
         } else {
             score = score - 5;
@@ -64,7 +64,7 @@ int dificuldade = 0;
     dificuldade = 2;
     printf ("\nFim da dificuldade 1");
     printf ("\nscore=%d \n", score);
- }    
+    
 printf("Incio da dificuldade 2\n");
 if (dificuldade == 2);
  printf("Onde foi criado o Andebol?");
@@ -141,7 +141,7 @@ printf("Quem foram os campeoes da champions Feminina da epoca 23/24?");
      score = score - 15;
      
  }
- dificuldade = 4;
+dificuldade = 4;
 printf("\n Fim da Dificuldade 3");
 printf("\nscore=%d \n" , score);
 }
@@ -167,5 +167,17 @@ printf("\nscore=%d \n" , score);
 printf("\n Fim da Dificuldade 4");
 printf("\n Pabens Acabaste o jogo do Andebol \nscore=%d \n" , score);
 }
+}
+if (desporto==2)
+printf("Bem-Vindo ao jogo de Futbol!");
+    
+    
+    
+    
+    
+    
+    
+    
+    
     return 0;
 }
