@@ -159,7 +159,7 @@ int main() {
             else
                 score = score - 5;
             printf("Quem ganhou a taça da liga de Portugal na epoca 23/24?");
-            printf("\n 1 = Benfica \n 2 = Estoril Praia \n 3 = Sporting CLube de Braga \n 4 = Vitoria de Setubal");
+            printf("\n 1 = Benfica \n 2 = Estoril Praia \n 3 = Sporting CLube de Braga \n 4 = Vitoria de Setubal \n");
             scanf("%d", & resposta);
             if (resposta == 3 )
                 score = score + 10;
@@ -174,7 +174,7 @@ int main() {
                 score = score - 5;
             printf("\nFim da dificuldade 1");
 		}
-		else (dificuldade == 2) {
+		else if (dificuldade == 3) {
 			printf("Inico da dificuldade 2");
             printf("\n Quem ganhou o campeonato Espanhol da epoca 23/24?");
             printf("\n 1 = Barcelona \n 2 = Atletico de Madrid \n 3 = Girona Futbol club \n 4 = Real Madrid \n");
@@ -206,7 +206,7 @@ int main() {
                 score = score - 5;
             printf("\nFim da dificuldade 2");
 		}
-		else (dificuldade == 3) {
+		else if (dificuldade == 3) {
 			printf("Inico da dificuldade 3");
             printf("\n Quem ganhou o Mundial de Futebol de 2002?");
             printf("\n 1 = Brasil \n 2 = Italia \n 3 = Russia \n 4 = Alemanha \n");
@@ -238,7 +238,7 @@ int main() {
                 score = score - 5;
             printf("\nFim da dificuldade 3");
 		}
-		else (dificuldade == 4 ) {
+		else if (dificuldade == 4 ) {
 		printf("Inico da dificuldade 4");
             printf("\n Quem foi o vencedor da primeira Bola de Ouro?");
             printf("\n 1 = Lev Yashin \n 2 = Alfredo Di Stefano \n 3 = Stanley Matthews \n 4 = Raymond Kopa \n");
