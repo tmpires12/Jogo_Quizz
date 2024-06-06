@@ -212,30 +212,30 @@ int main() {
             printf("\n 1 = Brasil \n 2 = Italia \n 3 = Russia \n 4 = Alemanha \n");
             scanf("%d", & resposta);
             if (resposta == 1)
-                score = score + 15;
+                score = score + 20;
             else
-                score = score - 10;
+                score = score - 15;
             printf("\n Quem ganhou o Euro de 2016?");
             printf("\n 1 = Franca \n 2 = Portugal \n 3 = Crocia \n 4 = Pais de Gales \n");
             scanf("%d", & resposta);
             if (resposta == 2)
-                score = score + 15;
+                score = score + 20;
             else
-                score = score - 10;
+                score = score - 15;
             printf("Quem marcou o golo da vitoria no Mundial de 2010?");
             printf("\n 1 = Xavi \n 2 = Van Persie \n 3 = Andreas Inista \n 4 = Arjen Robben");
             scanf("%d", & resposta);
             if (resposta == 3 )
-                score = score + 15;
+                score = score + 20;
             else
-                score = score - 5;
+                score = score - 15;
             printf("Qual destes jogadores nunca marcou na Champions League?");
             printf("\n 1 = Zlatan Inbrahimovic \n 2 = Jusus Vallejo \n 3 = Luis Nani \n 4 = Pepe \n");
             scanf("%d", & resposta);
             if (resposta == 1)
-                score = score + 15;
+                score = score + 20;
             else
-                score = score - 5;
+                score = score - 15;
             printf("\nFim da dificuldade 3");
 		}
 		else if (dificuldade == 4 ) {
@@ -244,16 +244,16 @@ int main() {
             printf("\n 1 = Lev Yashin \n 2 = Alfredo Di Stefano \n 3 = Stanley Matthews \n 4 = Raymond Kopa \n");
             scanf("%d", & resposta);
             if (resposta == 3)
-                score = score + 15;
+                score = score + 100;
             else
-                score = score - 10;
+                score = score - 99;
             printf("\n Onde foi o segundo Mundial do Mundo e em que ano?");
             printf("\n 1 = Italia, 1934 \n 2 = Alemanha, 1900 \n 3 = Suecia, 1945 \n 4 = Uruguai, 1981 \n");
             scanf("%d", & resposta);
             if (resposta == 1)
-                score = score + 15;
+                score = score + 100;
             else
-                score = score - 10;
+                score = score - 99;
                         printf("\nFim da dificuldade 2");
 		}
 	}
