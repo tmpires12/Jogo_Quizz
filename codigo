@@ -10,6 +10,8 @@ int main() {
     int score = 0;
     int resposta = 0;
     int dificuldade = 0;
+    int continuar=1;
+    while(continuar==1) {
     printf("\nQual o desporto:\n1 = Andebol;\n2 = Futebol. \n");
     scanf("%d", & desporto);
     if (desporto == 1) {
@@ -21,115 +23,130 @@ int main() {
             printf("\n Onde Jogam os irmaos Costa?");
             printf("\n 1 = Alto do Moinho \n 2 = Sporting \n 3 = Futbol CLube do Porto \n 4 = ABC de Braga \n");
             scanf("%d", & resposta);
-            if (resposta == 2)
+            if (resposta == 2) {
                 score = score + 10;
-            else
+            }else{
                 score = score - 5;
+			}
             printf("\nQual é o Clube onde o Nikola Mitrevski joga?");
             printf("\n 1 = Vitoria de Setubal \n 2 = Sport Lisboa e Benfica \n 3 = Futbol Clube do Porto \n 4 = Sporting Clube de Portugal \n");
             scanf("%d", & resposta);
-            if (resposta == 3)
+            if (resposta == 3) {
                 score = score + 10;
-            else
+            }else{
                 score = score - 5;
+			}
             printf("Qual o nome do jogador numero  6 do Sporting?");
             printf("\n 1 = Kiko Costa \n 2 = Gustavo Capdeville \n 3 = Nikola Mitrevski \n 4 = Manuel Gaspar \n");
             scanf("%d", & resposta);
-            if (resposta == 1)
+            if (resposta == 1) {
                 score = score + 10;
-            else
+            }else{
                 score = score - 5;
+			}
             printf("Qual foi o clube campeão nacional da Epoca 23/24?");
             printf("\n 1 = Estrela da Amadora \n 2 = Sport Lisboa e Benfica \n 3 = Alto do Moinho \n 4 = Sporting CLube de Portugal \n");
             scanf("%d", & resposta);
-            if (resposta == 4)
+            if (resposta == 4) {
                 score = score + 10;
-            else
+            }else{
                 score = score - 5;
+			}
             printf("\nFim da dificuldade 1");
+			dificuldade = 2;
         }
-		else if (dificuldade == 2) {
+		if (dificuldade == 2) {
             printf("Incio da dificuldade 2\n");
             printf("Onde foi criado o Andebol?");
             printf("\n 1 = Espanha \n 2 = Portugal \n 3 = Alemanha \n 4 = Inglaterra \n");
             scanf("%d", & resposta);
-            if (resposta == 3)
+             if (resposta == 3) {
                 score = score + 15;
-            else
+            } else {
                 score = score - 10;
+			}
             printf("O que significa o 2' no Andebol?");
             printf("\n 1 = O jogador sai de campo durante esse tempo (castigo) \n 2 = E uma pausa tecnica \n 3 = Tempo interrompido para assistencia de um jogador \n 4 = nao acontece nada \n");
             scanf("%d", & resposta);
-            if (resposta == 1)
+            if (resposta == 1) {
                 score = score + 15;
-            else
+            } else {
                 score = score - 10;
+			}
             printf("O que acontece quando um jogador leva cartao azul?");
             printf("\n 1 = relatorio \n 2 = exclusao \n 3 = fairplay \n 4 = aviso verbal \n");
             scanf("%d", & resposta);
-            if (resposta == 1)
+            if (resposta == 1) {
                 score = score + 15;
-            else
+            } else {
                 score = score - 10;
+			}
             printf("Ano de criação do Andebol");
             printf("\n 1 = 1900 \n 2 = 1990 \n 3 = 1917 \n 4 = 2000 \n");
             scanf("%d", & resposta);
-            if (resposta == 3)
+             if (resposta == 3) {
                 score = score + 15;
-            else
+            } else {
                 score = score - 10;
+			}
             dificuldade = 3;
             printf("\n Fim da Dificuldade 2");
         }
-		else if (dificuldade == 3) {
+		 if (dificuldade == 3) {
             printf("Inicio da dificuldade 3");
             printf("\nQuem foram os campeoes da champions masculina da epoca 23/24?");
             printf("\n 1 = Sport Lisboa e Benfica \n 2 = Magdeburg \n 3 = Paris Saint German \n 4 = Barcelona\n");
             scanf("%d", & resposta);
-            if (resposta == 4)
+             if (resposta == 4) {
                 score = score + 20;
-            else
+            } else {
                 score = score - 15;
+			}
             printf("Quem foram os campeoes da champions Feminina da epoca 23/24?");
             printf("\n 1 = Vipers Kristiansand \n 2 = Sport Lisboa e Benfica \n 3 = Alto do Moinho \n 4 = Barcelona \n");
             scanf("%d", & resposta);
-            if (resposta == 1)
+            if (resposta == 1) {
                 score = score + 20;
-            else
+            } else {
                 score = score - 15;
+			}
             printf("O que e o Time-Out?");
             printf("\n 1 = Intrevalo \n 2 = Exclusao de Um Jogador \n 3 = Pausa Tecnica, colocada pelo treinador a meio do jogo \n 4 = Treinador é expluso \n");
             scanf("%d", & resposta);
-            if (resposta == 3)
+            if (resposta == 3) {
                 score = score + 20;
-            else
+            } else {
                 score = score - 15;
+			}
             printf("A nossa seleçao ja ganhou algum titulo Europeu?");
             printf("\n 1 = nao \n 2 = sim \n");
             scanf("%d", & resposta);
-            if (resposta == 1)
+            if (resposta == 1) {
                 score = score + 20;
-            else
+            } else {
                 score = score - 15;
+			}
             dificuldade = 4;
             printf("\n Fim da Dificuldade 3");
         }
-		else if (dificuldade == 4) {
+		 if (dificuldade == 4) {
             printf("Inicio da dificuldade 4 ");
             printf("\nQuem foi o criador do Andebol?");
             printf("\n 1 = Joao Neves \n 2 = Benedikt \n 3 = Karl Schelenz \n 4 = Cristiano Ronaldo\n");
             scanf("%d", & resposta);
-            if (resposta == 3)
+             if (resposta == 3) {
                 score = score + 100;
-            else
+            } else {
                 score = score - 99;
+			}
             printf("\nQuem foi o melhor Jogador do mundo em 2016?");
             printf("\n 1 = Francisco Costa \n 2 = Nikola Karabatić \n 3 = Karl Schelenz \n 4 = Gustavo Capdeville\n");
             scanf("%d", & resposta);
-            if (resposta == 2)
+             if (resposta == 2) {
                 score = score + 100;
-            else
+            } else {
                 score = score - 99;
+			}
             printf("\n Fim da Dificuldade 4");
         }
 		else {
@@ -137,127 +154,151 @@ int main() {
 			return 0;
 		}
 		printf("\nParabens acabaste o jogo do Andebol \nscore=%d \n", score);
+		printf("Quer continuar?");
+		printf("\n 1 = Sim \n 2 = Nao \n");
+		scanf("%d",&continuar);
     }
 	else if (desporto == 2) {
     printf("Bem Vindo Ao jogo do Futebol");
 	printf("\nQual sera a dificuldade:\n 1 = facil;\n 2 = medio;\n 3 = dificil;\n 4 = Impossivel\n");
         scanf("%d", & dificuldade);
 		if (dificuldade == 1) {
-			printf("Inico da dificuldade 1");
+			printf("\nInico da dificuldade 1");
             printf("\n Quem ganhou o campeonato Portugues da epoca 23/24?");
             printf("\n 1 = Benfica \n 2 = Sporting clube de Portugal \n 3 = Futbol CLube do Porto \n 4 = Sporting Clube de Braga \n");
             scanf("%d", & resposta);
-            if (resposta == 2)
+            if (resposta == 2){
                 score = score + 10;
-            else
+            }else{
                 score = score - 5;
+			}
             printf("\nQuem foi o melhor marcador da Epoca 23/24?");
             printf("\n 1 = Viktor Gyokeres \n 2 = Banza \n 3 = Francisco Conceiçao \n 4 = Arthur Cabral \n");
             scanf("%d", & resposta);
-            if (resposta == 3)
+            if (resposta == 3) {
                 score = score + 10;
-            else
+            }else{
                 score = score - 5;
-            printf("Quem ganhou a taça da liga de Portugal na epoca 23/24?");
+			}
+            printf("\nQuem ganhou a taça da liga de Portugal na epoca 23/24?");
             printf("\n 1 = Benfica \n 2 = Estoril Praia \n 3 = Sporting CLube de Braga \n 4 = Vitoria de Setubal \n");
             scanf("%d", & resposta);
-            if (resposta == 3 )
+            if (resposta == 3 ) {
                 score = score + 10;
-            else
+            }else{
                 score = score - 5;
-            printf("Quem ganhou a Champions League 23/24?");
+			}
+            printf("\nQuem ganhou a Champions League 23/24?");
             printf("\n 1 = Benfica \n 2 = Real Madrid \n 3 = Paris Saint German \n 4 = Borussia Dortmund \n");
             scanf("%d", & resposta);
-            if (resposta == 2)
-                score = score + 10;
-            else
+            if (resposta == 2) {
+				score = score + 10;
+            }else{
                 score = score - 5;
+			}
             printf("\nFim da dificuldade 1");
+			dificuldade = 2;
 		}
-		else if (dificuldade == 3) {
-			printf("Inico da dificuldade 2");
+		if (dificuldade == 2) {
+			printf("\nInico da dificuldade 2");
             printf("\n Quem ganhou o campeonato Espanhol da epoca 23/24?");
             printf("\n 1 = Barcelona \n 2 = Atletico de Madrid \n 3 = Girona Futbol club \n 4 = Real Madrid \n");
             scanf("%d", & resposta);
-            if (resposta == 2)
+            if (resposta == 2) {
                 score = score + 15;
-            else
+            }else{
                 score = score - 10;
+			}
             printf("\n Quem ganhou o campeonato Alemao da Epoca 23/24?");
             printf("\n 1 = Borussia Dortmund \n 2 = FC Bayern Muchen \n 3 = Bayer 04 Leverkusen \n 4 = VFB Stuttgart \n");
             scanf("%d", & resposta);
-            if (resposta == 3)
+            if (resposta == 3) {
                 score = score + 15;
-            else
+            }else{
                 score = score - 10;
-            printf("Quem ganhou a Europa League da Epoca 23/24?");
-            printf("\n 1 = AS Roma \n 2 = OM Mararseile \n 3 = Bayer 04 Leverkusen \n 4 = BC Atlanta");
+			}
+            printf("\nQuem ganhou a Europa League da Epoca 23/24?");
+            printf("\n 1 = AS Roma \n 2 = OM Mararseile \n 3 = Bayer 04 Leverkusen \n 4 = BC Atlanta\n");
             scanf("%d", & resposta);
-            if (resposta == 3 )
+            if (resposta == 3 ) {
                 score = score + 15;
-            else
+            }else{
                 score = score - 5;
-            printf("Onde vai ser o Euro 2024?");
+			}
+            printf("\nOnde vai ser o Euro 2024?");
             printf("\n 1 = Alemanha \n 2 = Espanha \n 3 = Franca \n 4 = Pela Europa Toda \n");
             scanf("%d", & resposta);
-            if (resposta == 2)
+            if (resposta == 1) {
                 score = score + 15;
-            else
+			}else{
                 score = score - 5;
+			}
             printf("\nFim da dificuldade 2");
+			dificuldade = 3;
 		}
-		else if (dificuldade == 3) {
-			printf("Inico da dificuldade 3");
+		if (dificuldade == 3) {
+			printf("\nInico da dificuldade 3");
             printf("\n Quem ganhou o Mundial de Futebol de 2002?");
             printf("\n 1 = Brasil \n 2 = Italia \n 3 = Russia \n 4 = Alemanha \n");
             scanf("%d", & resposta);
-            if (resposta == 1)
+            if (resposta == 1) {
                 score = score + 20;
-            else
+            }else{
                 score = score - 15;
+			}
             printf("\n Quem ganhou o Euro de 2016?");
             printf("\n 1 = Franca \n 2 = Portugal \n 3 = Crocia \n 4 = Pais de Gales \n");
             scanf("%d", & resposta);
-            if (resposta == 2)
+            if (resposta == 2) {
                 score = score + 20;
-            else
+			}else{
                 score = score - 15;
-            printf("Quem marcou o golo da vitoria no Mundial de 2010?");
-            printf("\n 1 = Xavi \n 2 = Van Persie \n 3 = Andreas Inista \n 4 = Arjen Robben");
+			}
+            printf("\nQuem marcou o golo da vitoria no Mundial de 2010?");
+            printf("\n 1 = Xavi \n 2 = Van Persie \n 3 = Andreas Inista \n 4 = Arjen Robben \n");
             scanf("%d", & resposta);
-            if (resposta == 3 )
+            if (resposta == 3 ) {
                 score = score + 20;
-            else
+            } else {
                 score = score - 15;
-            printf("Qual destes jogadores nunca marcou na Champions League?");
+			}
+            printf("\nQual destes jogadores nunca marcou na Champions League?");
             printf("\n 1 = Zlatan Inbrahimovic \n 2 = Jusus Vallejo \n 3 = Luis Nani \n 4 = Pepe \n");
             scanf("%d", & resposta);
-            if (resposta == 1)
+            if (resposta == 1) {
                 score = score + 20;
-            else
+            }else{
                 score = score - 15;
+			}
             printf("\nFim da dificuldade 3");
+		dificuldade = 4;
 		}
-		else if (dificuldade == 4 ) {
-		printf("Inico da dificuldade 4");
+		if (dificuldade == 4 ) {
+		printf("\nInico da dificuldade 4");
             printf("\n Quem foi o vencedor da primeira Bola de Ouro?");
             printf("\n 1 = Lev Yashin \n 2 = Alfredo Di Stefano \n 3 = Stanley Matthews \n 4 = Raymond Kopa \n");
             scanf("%d", & resposta);
-            if (resposta == 3)
+            if (resposta == 3){
                 score = score + 100;
-            else
+            }else{
                 score = score - 99;
+			}
             printf("\n Onde foi o segundo Mundial do Mundo e em que ano?");
             printf("\n 1 = Italia, 1934 \n 2 = Alemanha, 1900 \n 3 = Suecia, 1945 \n 4 = Uruguai, 1981 \n");
             scanf("%d", & resposta);
-            if (resposta == 1)
+            if (resposta == 1) {
                 score = score + 100;
-            else
+            }else{
                 score = score - 99;
-                        printf("\nFim da dificuldade 2");
+			}
+            printf("\nFim da dificuldade 4");
+            printf("Quer continuar?");
+		    printf("\n 1 = Sim \n 2 = Nao \n");
+		    scanf("%d",&continuar);
 		}
 	}
 	else
         printf("O desporto (%d) nao e valido", desporto);
+    } 
     return 0;
 }
