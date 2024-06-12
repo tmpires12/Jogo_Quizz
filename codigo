@@ -44,7 +44,7 @@ int main() {
             }else{
                 score = score - 5;
 			}
-            printf("Qual foi o clube campeão nacional da Epoca 23/24?");
+            printf("\nQual foi o clube campeão nacional da Epoca 23/24?");
             printf("\n 1 = Estrela da Amadora \n 2 = Sport Lisboa e Benfica \n 3 = Alto do Moinho \n 4 = Sporting CLube de Portugal \n");
             scanf("%d", & resposta);
             if (resposta == 4) {
@@ -56,8 +56,8 @@ int main() {
 			dificuldade = 2;
         }
 		if (dificuldade == 2) {
-            printf("Incio da dificuldade 2\n");
-            printf("Onde foi criado o Andebol?");
+            printf("\nIncio da dificuldade 2\n");
+            printf("\nOnde foi criado o Andebol?");
             printf("\n 1 = Espanha \n 2 = Portugal \n 3 = Alemanha \n 4 = Inglaterra \n");
             scanf("%d", & resposta);
              if (resposta == 3) {
@@ -65,7 +65,7 @@ int main() {
             } else {
                 score = score - 10;
 			}
-            printf("O que significa o 2' no Andebol?");
+            printf("\nO que significa o 2' no Andebol?");
             printf("\n 1 = O jogador sai de campo durante esse tempo (castigo) \n 2 = E uma pausa tecnica \n 3 = Tempo interrompido para assistencia de um jogador \n 4 = nao acontece nada \n");
             scanf("%d", & resposta);
             if (resposta == 1) {
@@ -73,7 +73,7 @@ int main() {
             } else {
                 score = score - 10;
 			}
-            printf("O que acontece quando um jogador leva cartao azul?");
+            printf("\nO que acontece quando um jogador leva cartao azul?");
             printf("\n 1 = relatorio \n 2 = exclusao \n 3 = fairplay \n 4 = aviso verbal \n");
             scanf("%d", & resposta);
             if (resposta == 1) {
@@ -81,7 +81,7 @@ int main() {
             } else {
                 score = score - 10;
 			}
-            printf("Ano de criação do Andebol");
+            printf("\nAno de criação do Andebol\n");
             printf("\n 1 = 1900 \n 2 = 1990 \n 3 = 1917 \n 4 = 2000 \n");
             scanf("%d", & resposta);
              if (resposta == 3) {
@@ -90,7 +90,7 @@ int main() {
                 score = score - 10;
 			}
             dificuldade = 3;
-            printf("\n Fim da Dificuldade 2");
+            printf("\n Fim da Dificuldade 2\n");
         }
 		 if (dificuldade == 3) {
             printf("Inicio da dificuldade 3");
@@ -130,7 +130,7 @@ int main() {
             printf("\n Fim da Dificuldade 3");
         }
 		 if (dificuldade == 4) {
-            printf("Inicio da dificuldade 4 ");
+            printf("\nInicio da dificuldade 4 ");
             printf("\nQuem foi o criador do Andebol?");
             printf("\n 1 = Joao Neves \n 2 = Benedikt \n 3 = Karl Schelenz \n 4 = Cristiano Ronaldo\n");
             scanf("%d", & resposta);
@@ -291,7 +291,7 @@ int main() {
             }else{
                 score = score - 99;
 			}
-            printf("\nFim da dificuldade 4");
+            printf("\nFim da dificuldade 4\n");
             printf("Quer continuar?");
 		    printf("\n 1 = Sim \n 2 = Nao \n");
 		    scanf("%d",&continuar);
